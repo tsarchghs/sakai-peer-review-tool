@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Peer Review - Sakai LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sakai-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+            <h1 class="tool-title">My Peer Reviews</h1>
+            <p class="tool-description">Complete peer reviews for assigned submissions and view feedback on your work.</p>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="action-toolbar">
+            <div class="toolbar-left">
+                <select class="filter-select">
+                    <option value="all">All Assignments</option>
+                    <option value="pending">Pending Reviews</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Reviews to Complete -->
+            <div class="section-panel">
+                <h2 class="section-title">Reviews to Complete</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Submission</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Research Paper Draft Review</td>
+                            <td>Submission #1</td>
+                            <td>2025-02-15 11:59 PM</td>
+                            <td><span class="badge badge-pending">Not Started</span></td>
+                            <td class="action-cell">
+                                <a href="review-form.html" class="action-link">Start Review</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Research Paper Draft Review</td>
+                            <td>Submission #2</td>
+                            <td>2025-02-15 11:59 PM</td>
+                            <td><span class="badge badge-pending">Not Started</span></td>
+                            <td class="action-cell">
+                                <a href="review-form.html" class="action-link">Start Review</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Research Paper Draft Review</td>
+                            <td>Submission #3</td>
+                            <td>2025-02-15 11:59 PM</td>
+                            <td><span class="badge badge-draft">Draft Saved</span></td>
+                            <td class="action-cell">
+                                <a href="review-form.html" class="action-link">Continue Review</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Midterm Project Evaluation</td>
+                            <td>Submission #1</td>
+                            <td>2025-02-20 11:59 PM</td>
+                            <td><span class="badge badge-pending">Not Started</span></td>
+                            <td class="action-cell">
+                                <a href="review-form.html" class="action-link">Start Review</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Completed Reviews -->
+            <div class="section-panel">
+                <h2 class="section-title">Completed Reviews</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Submission</th>
+                            <th>Completed Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Case Study Analysis Review</td>
+                            <td>Submission #1</td>
+                            <td>2025-01-25 3:30 PM</td>
+                            <td class="action-cell">
+                                <a href="#" class="action-link">View</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Case Study Analysis Review</td>
+                            <td>Submission #2</td>
+                            <td>2025-01-26 10:15 AM</td>
+                            <td class="action-cell">
+                                <a href="#" class="action-link">View</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Feedback Received -->
+            <div class="section-panel">
+                <h2 class="section-title">Feedback on My Submissions</h2>
+                
+                <div class="feedback-card">
+                    <div class="feedback-header">
+                        <h3 class="feedback-title">Research Paper Draft Review</h3>
+                        <span class="feedback-date">Submitted: 2025-01-20 3:45 PM</span>
+                    </div>
+                    
+                    <div class="feedback-stats">
+                        <div class="feedback-stat">
+                            <span class="stat-label">Reviews Received:</span>
+                            <span class="stat-value">1 / 3</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback-content">
+                        <h4 class="feedback-subtitle">Review #1</h4>
+                        
+                        <div class="review-section">
+                            <div class="review-criterion">
+                                <span class="criterion-label">Thesis Clarity:</span>
+                                <span class="criterion-score">22 / 25</span>
+                            </div>
+                            <p class="review-text">The thesis statement is clear and well-articulated. It effectively sets up the argument for the rest of the paper.</p>
+                        </div>
+
+                        <div class="review-section">
+                            <div class="review-criterion">
+                                <span class="criterion-label">Argument Structure:</span>
+                                <span class="criterion-score">20 / 25</span>
+                            </div>
+                            <p class="review-text">Good logical flow. Consider strengthening the transition between paragraphs 3 and 4 to improve coherence.</p>
+                        </div>
+
+                        <div class="review-section">
+                            <div class="review-criterion">
+                                <span class="criterion-label">Evidence Quality:</span>
+                                <span class="criterion-score">26 / 30</span>
+                            </div>
+                            <p class="review-text">Strong use of credible sources. The integration of evidence is mostly effective, though citation format needs attention in a few places.</p>
+                        </div>
+
+                        <div class="review-section">
+                            <div class="review-criterion">
+                                <span class="criterion-label">Writing Quality:</span>
+                                <span class="criterion-score">18 / 20</span>
+                            </div>
+                            <p class="review-text">Well-written with minimal grammatical errors. Sentence variety could be improved in the conclusion section.</p>
+                        </div>
+
+                        <div class="review-section">
+                            <div class="review-overall">
+                                <span class="overall-label">Overall Score:</span>
+                                <span class="overall-score">86 / 100</span>
+                            </div>
+                            <p class="review-text"><strong>General Comments:</strong> This is a strong draft with a clear argument and good supporting evidence. Focus on improving transitions and addressing the citation format issues mentioned above.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Peer Review - Sakai LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sakai-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+            <h1 class="tool-title">Complete Peer Review</h1>
+            <p class="tool-description">Evaluate the submission using the provided rubric and criteria.</p>
+        </div>
+
+        <!-- Navigation Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="student-view.html" class="breadcrumb-link">My Peer Reviews</a> &gt; 
+            <span class="breadcrumb-current">Research Paper Draft Review - Submission #3</span>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Submission View -->
+            <div class="section-panel">
+                <h2 class="section-title">Submission to Review</h2>
+                <div class="submission-info">
+                    <p class="info-text">Review this submission anonymously. Your identity will not be revealed to the author.</p>
+                    <p class="info-text"><strong>Assignment:</strong> Research Paper Draft Review</p>
+                    <p class="info-text"><strong>Submission Date:</strong> January 22, 2025 at 2:15 PM</p>
+                </div>
+                
+                <div class="submission-content">
+                    <div class="file-attachment">
+                        <span class="file-icon">📄</span>
+                        <a href="#" class="file-link">research_paper_draft.pdf</a>
+                        <span class="file-size">(245 KB)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Form -->
+            <div class="section-panel">
+                <h2 class="section-title">Evaluation Rubric</h2>
+                <p class="form-instruction">Rate each criterion and provide detailed feedback. All fields are required.</p>
+                
+                <form class="review-form">
+                    <!-- Criterion 1 -->
+                    <div class="form-group criterion-group">
+                        <label class="form-label">Thesis Clarity (25 points)</label>
+                        <p class="form-help">Clear, focused thesis statement that guides the paper.</p>
+                        
+                        <div class="score-input">
+                            <label for="thesis-score" class="score-label">Score:</label>
+                            <input type="number" id="thesis-score" name="thesis-score" min="0" max="25" class="score-field" placeholder="0-25">
+                            <span class="score-max">/ 25</span>
+                        </div>
+                        
+                        <label for="thesis-feedback" class="form-label">Feedback:</label>
+                        <textarea id="thesis-feedback" name="thesis-feedback" rows="4" class="form-textarea" placeholder="Provide specific feedback on the thesis clarity..."></textarea>
+                    </div>
+
+                    <!-- Criterion 2 -->
+                    <div class="form-group criterion-group">
+                        <label class="form-label">Argument Structure (25 points)</label>
+                        <p class="form-help">Logical organization and flow of ideas throughout the paper.</p>
+                        
+                        <div class="score-input">
+                            <label for="structure-score" class="score-label">Score:</label>
+                            <input type="number" id="structure-score" name="structure-score" min="0" max="25" class="score-field" placeholder="0-25">
+                            <span class="score-max">/ 25</span>
+                        </div>
+                        
+                        <label for="structure-feedback" class="form-label">Feedback:</label>
+                        <textarea id="structure-feedback" name="structure-feedback" rows="4" class="form-textarea" placeholder="Provide specific feedback on the argument structure..."></textarea>
+                    </div>
+
+                    <!-- Criterion 3 -->
+                    <div class="form-group criterion-group">
+                        <label class="form-label">Evidence Quality (30 points)</label>
+                        <p class="form-help">Use of credible sources and effective integration of evidence.</p>
+                        
+                        <div class="score-input">
+                            <label for="evidence-score" class="score-label">Score:</label>
+                            <input type="number" id="evidence-score" name="evidence-score" min="0" max="30" class="score-field" placeholder="0-30">
+                            <span class="score-max">/ 30</span>
+                        </div>
+                        
+                        <label for="evidence-feedback" class="form-label">Feedback:</label>
+                        <textarea id="evidence-feedback" name="evidence-feedback" rows="4" class="form-textarea" placeholder="Provide specific feedback on the evidence quality..."></textarea>
+                    </div>
+
+                    <!-- Criterion 4 -->
+                    <div class="form-group criterion-group">
+                        <label class="form-label">Writing Quality (20 points)</label>
+                        <p class="form-help">Grammar, clarity, and overall writing mechanics.</p>
+                        
+                        <div class="score-input">
+                            <label for="writing-score" class="score-label">Score:</label>
+                            <input type="number" id="writing-score" name="writing-score" min="0" max="20" class="score-field" placeholder="0-20">
+                            <span class="score-max">/ 20</span>
+                        </div>
+                        
+                        <label for="writing-feedback" class="form-label">Feedback:</label>
+                        <textarea id="writing-feedback" name="writing-feedback" rows="4" class="form-textarea" placeholder="Provide specific feedback on the writing quality..."></textarea>
+                    </div>
+
+                    <!-- Overall Comments -->
+                    <div class="form-group">
+                        <label for="overall-comments" class="form-label">Overall Comments</label>
+                        <p class="form-help">Provide general feedback and suggestions for improvement.</p>
+                        <textarea id="overall-comments" name="overall-comments" rows="6" class="form-textarea" placeholder="Summarize your overall assessment and provide constructive suggestions..."></textarea>
+                    </div>
+
+                    <!-- Total Score Display -->
+                    <div class="score-summary">
+                        <span class="summary-label">Total Score:</span>
+                        <span class="summary-value">0 / 100</span>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary">Save Draft</button>
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                        <button type="button" class="btn btn-text">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

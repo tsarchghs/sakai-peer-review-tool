@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Review - Sakai LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sakai-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+            <h1 class="tool-title">Peer Review</h1>
+            <p class="tool-description">Manage structured peer review assignments and evaluate student submissions.</p>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="action-toolbar">
+            <div class="toolbar-left">
+                <button class="btn btn-primary">Create Peer Review</button>
+                <button class="btn btn-secondary">Import Rubric</button>
+            </div>
+            <div class="toolbar-right">
+                <select class="filter-select">
+                    <option value="all">All Reviews</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                    <option value="draft">Draft</option>
+                </select>
+                <button class="btn btn-secondary">Export Data</button>
+            </div>
+        </div>
+
+        <!-- Status Summary -->
+        <div class="status-summary">
+            <div class="status-item">
+                <span class="status-label">Active Reviews:</span>
+                <span class="status-value">3</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Pending Evaluations:</span>
+                <span class="status-value">12</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Completed This Week:</span>
+                <span class="status-value">8</span>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <!-- Peer Review Assignments Table -->
+            <div class="section-panel">
+                <h2 class="section-title">Peer Review Assignments</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable">Assignment Title</th>
+                            <th class="sortable">Due Date</th>
+                            <th class="sortable">Reviews Required</th>
+                            <th class="sortable">Submissions</th>
+                            <th class="sortable">Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="assignment-details.html" class="table-link">Research Paper Draft Review</a></td>
+                            <td>2025-02-15 11:59 PM</td>
+                            <td>3 per student</td>
+                            <td>24 / 28</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td class="action-cell">
+                                <a href="edit-review.html" class="action-link">Edit</a> | 
+                                <a href="assignment-details.html" class="action-link">View</a> | 
+                                <a href="#" class="action-link">Grade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="assignment-details.html" class="table-link">Midterm Project Evaluation</a></td>
+                            <td>2025-02-20 11:59 PM</td>
+                            <td>2 per student</td>
+                            <td>18 / 28</td>
+                            <td><span class="badge badge-active">Active</span></td>
+                            <td class="action-cell">
+                                <a href="edit-review.html" class="action-link">Edit</a> | 
+                                <a href="assignment-details.html" class="action-link">View</a> | 
+                                <a href="#" class="action-link">Grade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="assignment-details.html" class="table-link">Case Study Analysis Review</a></td>
+                            <td>2025-01-28 11:59 PM</td>
+                            <td>2 per student</td>
+                            <td>28 / 28</td>
+                            <td><span class="badge badge-completed">Completed</span></td>
+                            <td class="action-cell">
+                                <a href="edit-review.html" class="action-link">Edit</a> | 
+                                <a href="assignment-details.html" class="action-link">View</a> | 
+                                <a href="#" class="action-link">Grade</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="assignment-details.html" class="table-link">Lab Report Peer Feedback</a></td>
+                            <td>2025-03-01 11:59 PM</td>
+                            <td>3 per student</td>
+                            <td>0 / 28</td>
+                            <td><span class="badge badge-draft">Draft</span></td>
+                            <td class="action-cell">
+                                <a href="edit-review.html" class="action-link">Edit</a> | 
+                                <a href="assignment-details.html" class="action-link">View</a> | 
+                                <a href="#" class="action-link">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="section-panel">
+                <h2 class="section-title">Recent Peer Review Activity</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Assignment</th>
+                            <th>Action</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anderson, Sarah</td>
+                            <td>Research Paper Draft Review</td>
+                            <td>Completed review of John Smith's submission</td>
+                            <td>2025-01-23 2:45 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Chen, Michael</td>
+                            <td>Research Paper Draft Review</td>
+                            <td>Submitted paper for peer review</td>
+                            <td>2025-01-23 1:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Johnson, Emily</td>
+                            <td>Midterm Project Evaluation</td>
+                            <td>Completed review of Lisa Davis's submission</td>
+                            <td>2025-01-23 11:20 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Martinez, Carlos</td>
+                            <td>Research Paper Draft Review</td>
+                            <td>Completed review of Emily Johnson's submission</td>
+                            <td>2025-01-23 9:15 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Williams, Jessica</td>
+                            <td>Midterm Project Evaluation</td>
+                            <td>Submitted project for peer review</td>
+                            <td>2025-01-22 4:50 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
